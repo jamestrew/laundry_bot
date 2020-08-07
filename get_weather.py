@@ -1,8 +1,9 @@
 import requests
 import json
 import datetime
+import os
 
-API_KEY = '73f5368224eb5dc6ab4b96b6cfaa24a7'
+API_KEY = os.getenv('WEATHER_KEY')
 CITY_ID = 6167865
 url = f'http://api.openweathermap.org/data/2.5/forecast?id={CITY_ID}&appid={API_KEY}'
 
